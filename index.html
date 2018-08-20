@@ -1,0 +1,60 @@
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation </title>
+<style>
+.si{
+border:1px solid;
+width:400px;
+height:450px;
+margin-left:500px;
+}
+.si label{
+margin-left:20px;
+}
+.si input{
+margin-left:24px;
+}
+</style>
+<script src="validation.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+<div class="si">
+<h1>Registration Form</h1>
+<form name='registration' onSubmit="return formValidation();">
+<label for="userid">User id:</label>
+<input type="text" name="userid" size="12" /><br>
+<label for="passid">Password:</label>
+<input type="password" name="passid" size="12" /><br>
+<label for="username">Name:</label>
+<input type="text" name="username" size="15" /><br>
+<label for="address">Address:</label>
+<input type="text" name="address" size="15" /><br>
+<label for="country">Country:</label>
+<select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select><br>
+<label for="zip">ZIP Code:</label>
+<input type="text" name="zip" /><br>
+<label for="email">Email:</label>
+<input type="text" name="email" size="15" />
+<label id="gender">Sex:</label></li>
+<input type="radio" name="msex" value="Male" /><span>Male</span>
+<input type="radio" name="fsex" value="Female" /><span>Female</span><br>
+<label>Language:</label>
+<input type="checkbox" name="en" value="en" checked /><span>English</span>
+<input type="checkbox" name="nonen" value="noen" /><span>Non English</span><br>
+<label for="desc">About:</label>
+<textarea name="desc" id="desc"></textarea><br>
+<input type="submit" name="submit" value="Submit" />
+</form>
+</div>
+</body>
+</html>
+
+
+
